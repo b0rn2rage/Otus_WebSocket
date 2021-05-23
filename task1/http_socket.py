@@ -1,9 +1,9 @@
-import http_socket
-from config import LOCALHOST, random_port
+import socket
+from task1.config import LOCALHOST, random_port
 
 BACKLOG = 10
 
-my_socket = http_socket.http_socket()
+my_socket = socket.socket()
 address_and_port = (LOCALHOST, random_port())
 my_socket.bind(address_and_port)
 
